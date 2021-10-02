@@ -2,13 +2,21 @@ import React, { Children } from 'react'
 import PropTypes, { node } from 'prop-types'
 import { StyledText } from './styled'
 
-const Text = ({ fontSize, textAlign, textTransform, fontWeight, children }) => {
+const Text = ({
+  fontSize,
+  textAlign,
+  textTransform,
+  fontWeight,
+  color,
+  children,
+}) => {
   return (
     <StyledText
       fontSize={fontSize}
       textAlign={textAlign}
       textTransform={textTransform}
       fontWeight={fontWeight}
+      color={color}
     >
       {children}
     </StyledText>
@@ -17,6 +25,7 @@ const Text = ({ fontSize, textAlign, textTransform, fontWeight, children }) => {
 
 Text.propTypes = {
   children: PropTypes.node.isRequired,
+  color: PropTypes.string,
   fontSize: PropTypes.number,
   fontWeight: PropTypes.number || PropTypes.string,
   textAlign: PropTypes.string,
@@ -28,6 +37,7 @@ Text.defaultProps = {
   fontWeight: 400,
   textAlign: 'left',
   textTransform: 'none',
+  color: '#000',
 }
 
 export default Text

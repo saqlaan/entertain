@@ -6,7 +6,7 @@ export const typography = {
     fontWeight: 600,
   },
   p1: {
-    fontSize: 14,
+    fontSize: 15,
     textAlign: 'left',
     textTransform: 'none',
     fontWeight: 400,

@@ -5,4 +5,5 @@ export const StyledText = styled.Text`
   font-weight: ${({ fontWeight }) => fontWeight};
   text-transform: ${({ textTransform }) => textTransform};
   text-align: ${({ textAlign }) => textAlign};
+  color: ${({ color }) => color};
 `

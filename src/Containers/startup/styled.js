@@ -8,10 +8,15 @@ export const HeroWrapper = styled.View`
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: #fff;
+  background: #000;
   height: 200px;
   border-top-left-radius: ${({ theme }) => theme.spacing.xlarge * 3}px;
   padding-left: ${({ theme }) => theme.spacing.xlarge * 2}px;
   padding-top: ${({ theme }) => theme.spacing.xlarge}px;
   padding-right: ${({ theme }) => theme.spacing.large}px;
+`
+export const StyledImage = styled.Image`
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
 `
